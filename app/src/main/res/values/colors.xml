@@ -3,4 +3,14 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!--Color used for our heading text in the TextView  -->
+    <color name="heading_text_view_color">#ffffff</color>
+
+
+    <!--Background color for our App used in activity_main  -->
+    <color name="app_background_color">#f1f3f3</color>
+
+    <!--Background color for our App used in activity_main2 -->
+    <color name="app_background_color2">#d6dcdc</color>
 </resources>

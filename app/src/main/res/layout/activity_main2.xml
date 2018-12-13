@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_color2"
+    >
+
+    <TextView
+        android:id="@+id/app_headingView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:gravity="center_horizontal"
+        android:text="@string/app_heading"
+        android:textColor="@color/heading_text_view_color"
+        android:textSize="18sp"
+        android:layout_marginTop="35dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/ball_image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="46dp"
+            app:srcCompat="@drawable/ball1"
+            android:contentDescription="@string/ball_image_description"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal">
+
+        <Button
+            android:id="@+id/askButton2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="?attr/colorPrimary"
+            android:text="@string/ask_button_text"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+    </RelativeLayout>
+
+
+</LinearLayout>

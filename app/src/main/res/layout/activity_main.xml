@@ -1,13 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
-    android:paddingBottom="16dp"
+    android:paddingTop="@dimen/linear_layout_parent_padding_values"
+    android:orientation="vertical"
+    android:background="@color/app_background_color"
     tools:context=".MainActivity">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp">
+
+    <TextView
+        android:id="@+id/app_headingView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:gravity="center_horizontal"
+        android:text="@string/app_heading"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        />
+
 </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageBall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ball1"
+                android:layout_marginTop="70dp"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginBottom="25dp"
+        >
+
+        <Button
+            android:id="@+id/askButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="?attr/colorPrimary"
+            android:text="@string/ask_button_text"
+            android:textSize="16dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+    </RelativeLayout>
+
+
+</LinearLayout>

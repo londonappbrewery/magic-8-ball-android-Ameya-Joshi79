@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Adding the dimens.xml file for adding the dimension values for the App Viz. padding values, margins, etc -->
+<resources>
+    <dimen name="linear_layout_parent_padding_values">16dp</dimen>
+
+</resources>
